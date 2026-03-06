@@ -1,19 +1,19 @@
 
 ---
 
-```markdown
-# 🛡️ TUN_TUN_RECON v1.1
-### Advanced Reconnaissance & Vulnerability Discovery Engine
+████████╗██╗   ██╗███╗   ██╗     ████████╗██╗   ██╗███╗   ██╗
+╚══██╔══╝██║   ██║████╗  ██║     ╚══██╔══╝██║   ██║████╗  ██║
+   ██║   ██║   ██║██╔██╗ ██║        ██║   ██║   ██║██╔██╗ ██║
+   ██║   ██║   ██║██║╚██╗██║        ██║   ██║   ██║██║╚██╗██║
+   ██║   ╚██████╔╝██║ ╚████║        ██║   ╚██████╔╝██║ ╚████║
+   ╚═╝    ╚═════╝ ╚═╝  ╚═══╝        ╚═╝    ╚═════╝ ╚═╝  ╚═══╝
 
-<p align="center">
-  <img src="screenshots/tun-tun.png" width="900">
-</p>
+        🔥 TUN TUN FRAMEWORK 🔥
+   Automated Recon & Vulnerability Scanner
 
-![Security](https://img.shields.io/badge/Security-Recon%20Framework-red)
-![Version](https://img.shields.io/badge/Version-1.1-blue)
-![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20MacOS-orange)
-![License](https://img.shields.io/badge/License-Educational-green)
-
+   Author : Rajeshwar Singh
+   Modules: 30+
+   Mode   : Bug Bounty / Pentest
 ---
 
 ## 📑 Table of Contents
