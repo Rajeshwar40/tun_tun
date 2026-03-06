@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-hacker-green: #00ff41;
+  --color-hacker-red: #ff3131;
+  --color-hacker-amber: #ffb000;
+  --color-hacker-blue: #00e5ff;
+  --color-hacker-bg: #0a0a0a;
+  --color-hacker-panel: #141414;
+  --color-hacker-border: #222222;
+}
+
+@layer base {
+  body {
+    @apply bg-hacker-bg text-gray-400 font-mono selection:bg-hacker-green selection:text-black;
+  }
+}
+
+@layer utilities {
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-black;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-hacker-green/20 rounded-full hover:bg-hacker-green/40 transition-colors;
+  }
+  
+  .terminal-text {
+    text-shadow: 0 0 5px rgba(0, 255, 65, 0.2);
+  }
+  
+  .scanline {
+    width: 100%;
+    height: 100px;
+    z-index: 10;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 255, 65, 0.02) 50%, rgba(0, 0, 0, 0) 100%);
+    opacity: 0.1;
+    position: absolute;
+    bottom: 100%;
+    animation: scanline 10s linear infinite;
+  }
+}
+
+@keyframes scanline {
+  0% { bottom: 100%; }
+  100% { bottom: -100px; }
+}
